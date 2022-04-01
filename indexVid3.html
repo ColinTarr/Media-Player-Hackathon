@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="header"><h1 id="title">Media Player</h1></div>
+    <div id="videoListContainer">
+      <h2 id="videoListTitle">Videos:</h2>
+      <div id="videoList">
+        <a href="indexVid1.html">Man in a Suit Works from the Kitchen</a>
+        <br />
+        <hr />
+        <a href="indexVid2.html">Reflection of a Screen in Glasses</a>
+        <br />
+        <hr />
+        <a href="indexVid3.html">Woman Typing on Her Laptop in a Coffee Shop</a>
+        <img
+          id="currentVideoIndicator"
+          src="images/icons8-play-50.png"
+          alt=""
+        />
+        <br />
+        <hr />
+        <a href="indexVid4.html">Woman Surfing the Web</a>
+        <br />
+        <hr />
+        <a href="indexVid5.html">Two People on Tablet</a>
+        <br />
+        <hr />
+        <a href="indexVid6.html">Man Working on the Computer in His Office</a>
+        <br />
+        <hr />
+        <a href="indexVid7.html">Woman Working on Graphs</a>
+        <br />
+        <hr />
+        <a href="indexVid8.html">Man Wearing Vr Headset</a>
+        <br />
+        <hr />
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="player_wrapper">
+        <video id="videoAsset">
+          <source
+            id="videoName"
+            src="mp4_assets/mixkit-woman-typing-on-her-laptop-in-a-coffee-shop-206.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support the video tag.
+        </video>
+        <div id="player_controls">
+          <input
+            type="image"
+            src="images/icons8-play-50.png"
+            onclick="play_vid()"
+            id="play_button"
+          />
+          <input
+            type="image"
+            src="images/icons8-pause-50.png"
+            onclick="pause_vid()"
+            id="pause_button"
+          />
+          <img src="images/icons8-audio-50.png" id="vol_img" />
+          <input
+            type="range"
+            id="change_vol"
+            onchange="change_vol()"
+            step="0.05"
+            min="0"
+            max="1"
+            value="1"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
